@@ -1,733 +1,194 @@
-
+```html
 <!doctype html>
 <html lang="es">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#17251f">
-<meta property="og:type" content="website">
-<meta property="og:title" content="AMIGOS / FRIENDS — Una historia que nos une | Visión Profesional">
-<meta property="og:description" content="Una historia de amistad, fútbol y sueños de barrio. Conocé el proyecto y participá del casting infantil 2026 en Don Torcuato.">
-<meta property="og:image" content="https://iili.io/nwPxELQ.md.png">
-<meta property="og:image:alt" content="AMIGOS / FRIENDS — imagen principal del cortometraje">
-<meta property="og:locale" content="es_AR">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="AMIGOS / FRIENDS — Una historia que nos une">
-<meta name="twitter:description" content="Una historia de amistad, fútbol y sueños de barrio. Inscripción al casting infantil 2026.">
-<meta name="twitter:image" content="https://iili.io/nwPxELQ.md.png">
-<meta name="description" content="AMIGOS / FRIENDS, un cortometraje de Visión Profesional sobre la amistad y el fútbol. Inscripción al casting infantil 2026 en Don Torcuato.">
-<title>AMIGOS / FRIENDS — Una historia que nos une</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<style>
-:root{--bg:#10100f;--panel:#191917;--text:#f5f1e8;--muted:#bdb7aa;--gold:#e8bd67;--line:rgba(255,255,255,.14);--max:1160px}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6}
-a{color:inherit}
-img{display:block;width:100%;height:100%;object-fit:cover}
-.wrap{width:min(var(--max),calc(100% - 40px));margin:auto}
-.eyebrow{text-transform:uppercase;letter-spacing:.22em;font-size:.72rem;color:var(--gold);font-weight:800}
-.topbar{position:absolute;z-index:2;top:0;left:0;width:100%;padding:24px 0}
-.nav{display:flex;align-items:center;justify-content:space-between;gap:20px}
-.brand{font-size:.82rem;font-weight:900;letter-spacing:.2em}
-.nav a{text-decoration:none;font-size:.88rem;color:#f3eee5}
-.navlinks{display:flex;gap:24px;align-items:center}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:14px 20px;border:1px solid var(--gold);background:var(--gold);color:#17130b;text-decoration:none;font-weight:900;text-transform:uppercase;letter-spacing:.07em;font-size:.78rem;transition:.2s;cursor:pointer;border-radius:2px}
-.btn:hover{transform:translateY(-2px);background:#f3d28f}
-.navlinks .btn{animation:castingPulse 2.2s infinite;box-shadow:0 0 0 0 rgba(217,184,112,.48)}
-@keyframes castingPulse{0%{box-shadow:0 0 0 0 rgba(217,184,112,.48)}70%{box-shadow:0 0 0 11px rgba(217,184,112,0)}100%{box-shadow:0 0 0 0 rgba(217,184,112,0)}}
-@media(prefers-reduced-motion:reduce){.navlinks .btn{animation:none}}
-.btn.outline{background:transparent;color:var(--text);border-color:rgba(255,255,255,.55)}
-.hero{min-height:780px;min-height:min(900px,100svh);position:relative;display:flex;align-items:flex-end;overflow:hidden;background:#25211b}
-.hero-bg{position:absolute;inset:0}
-.hero-bg img{object-position:center 40%;filter:brightness(.64)}
-.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,8,7,.78),rgba(8,8,7,.18) 75%),linear-gradient(0deg,#10100f 0%,transparent 60%)}
-.hero-content{position:relative;z-index:1;padding:170px 0 84px;max-width:760px}
-.hero h1{font-size:clamp(4.2rem,12vw,9.5rem);line-height:.84;letter-spacing:-.075em;margin:22px 0 20px;font-weight:950}
-.hero h1 span{display:block;font-size:.32em;letter-spacing:.15em;margin-top:22px;color:var(--gold)}
-.hero p{font-size:clamp(1rem,2vw,1.3rem);max-width:570px;color:#e0dacf}
-.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
-.hero-note{margin-top:34px;color:#d4cbbd;font-size:.75rem;letter-spacing:.12em;text-transform:uppercase}
-.section{padding:100px 0}
-.section-head{max-width:700px;margin-bottom:42px}
-.section h2{font-size:clamp(2.3rem,6vw,4.7rem);line-height:.98;letter-spacing:-.055em;margin:12px 0 18px}
-.lead{font-size:1.1rem;color:#d1cbc0;max-width:680px}
-.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
-.image-stack{display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:start}
-.image-stack figure{margin:0;overflow:hidden;background:#27241f}
-.image-stack figure:first-child{height:420px}
-.image-stack figure:last-child{height:330px;margin-top:62px}
-.image-stack img{transition:transform .5s}
-.image-stack figure:hover img{transform:scale(1.035)}
-.pill-row{display:flex;flex-wrap:wrap;gap:9px;margin-top:25px}
-.pill{border:1px solid var(--line);padding:8px 12px;color:#e4ddcf;font-size:.82rem}
-.casting{background:#e8dfcf;color:#171510}
-.casting .eyebrow{color:#7c5719}
-.casting .lead{color:#49443b}
-.casting-layout{display:grid;grid-template-columns:.85fr 1.15fr;gap:48px;align-items:start}
-.event-card{background:#171613;color:var(--text);padding:30px;position:sticky;top:24px}
-.event-card h3{font-size:2rem;line-height:1;margin:12px 0 22px}
-.event-line{display:grid;grid-template-columns:26px 1fr;gap:12px;padding:15px 0;border-top:1px solid var(--line)}
-.event-line b{display:block}
-.event-line span{font-size:.92rem;color:#d3cbbb}
-.requirements{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:24px 0}
-.requirement{padding:17px;border:1px solid rgba(0,0,0,.18);background:rgba(255,255,255,.24)}
-.requirement strong{display:block;margin-bottom:5px}
-.requirement small{color:#514a3e}
-.form-panel{background:#f8f3e9;padding:30px;color:#181713}
-.form-panel h3{font-size:1.8rem;line-height:1.1;margin:0 0 8px}
-.form-panel>p{color:#5a554c;font-size:.9rem}
-.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.field{display:flex;flex-direction:column;gap:6px}
-.field.full{grid-column:1/-1}
-.field label{font-size:.8rem;font-weight:800}
-.field input,.field select,.field textarea{width:100%;padding:12px;border:1px solid #c8c0b2;background:#fffdf8;color:#171510;font:inherit;border-radius:0}
-.field textarea{min-height:100px;resize:vertical}
-.form-note{font-size:.78rem;color:#6a6256;margin:14px 0}
-.check{display:flex;gap:10px;align-items:flex-start;font-size:.82rem;color:#4e493f;margin:15px 0}
-.check input{margin-top:5px}
-.form-panel .btn{width:100%;border:0}
-.gallery-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:16px}
-.gallery-large{height:580px}
-.gallery-small{height:580px}
-.gallery-grid figure{margin:0;position:relative;overflow:hidden}
-.gallery-grid figure:after{content:"";position:absolute;inset:45% 0 0;background:linear-gradient(transparent,rgba(0,0,0,.55))}
-.gallery-grid figcaption{position:absolute;z-index:1;bottom:20px;left:22px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;font-size:.75rem}
-.quote{font-size:clamp(1.8rem,4vw,3.5rem);letter-spacing:-.04em;line-height:1.12;max-width:900px}
-.quote em{font-style:normal;color:var(--gold)}
-.quote-section{border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.gallery-section-break{padding-top:clamp(115px,13vw,175px)}
-.footer{padding:44px 0 30px}
-.footer-row{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
-.footer strong{letter-spacing:.18em}
-.footer p{color:var(--muted);font-size:.82rem}
-.footer-links{display:flex;gap:16px;flex-wrap:wrap}
-.footer-links a{font-size:.85rem;text-decoration:none;color:#e7ddca}
-.toast{display:none;margin-top:14px;padding:12px;background:#e3d3ae;color:#292013;font-size:.85rem}
-.toast.show{display:block}
-.fineprint{font-size:.78rem;color:#6b6358}
+  <title>CARLOS GALAUS — Reclamo por trabajo impago</title>
+  <meta name="description" content="Reclamo público de un trabajador por un trabajo que afirma haber realizado y que todavía no le pagaron.">
+  <meta name="theme-color" content="#101410">
 
-@media(max-width:760px){
-.wrap{width:min(100% - 28px,var(--max))}
-.navlinks a:not(.btn){display:none}
-.topbar{padding:17px 0}
-.hero{min-height:760px;min-height:92svh}
-.hero-content{padding:140px 0 55px}
-.hero h1{font-size:clamp(4rem,20vw,7rem)}
-.section{padding:70px 0}
-.about-grid,.casting-layout,.gallery-grid{grid-template-columns:1fr;gap:30px}
-.image-stack figure:first-child{height:350px}
-.image-stack figure:last-child{height:280px;margin-top:35px}
-.event-card{position:static}
-.requirements{grid-template-columns:1fr 1fr}
-.gallery-large{height:450px}
-.gallery-small{height:390px}
-.form-grid{grid-template-columns:1fr}
-.field.full{grid-column:auto}
-.form-panel{padding:22px}
-.casting-layout{gap:24px}
-.hero:after{background:linear-gradient(0deg,#10100f 0%,rgba(8,8,7,.2) 100%),linear-gradient(90deg,rgba(8,8,7,.48),transparent)}
-}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="CARLOS GALAUS — ¡Me pediste el trabajo y no lo pagaste!">
+  <meta property="og:description" content="Un reclamo por trabajo realizado y pago pendiente.">
 
-/* Pulido visual */
-:root{--gold:#edc46f;--max:1200px}
-body{overflow-x:hidden}
-.topbar{position:absolute;backdrop-filter:blur(10px);background:linear-gradient(180deg,rgba(10,10,9,.62),transparent)}
-.brand{display:inline-flex;align-items:center;gap:10px}
-.brand:before{content:"";width:9px;height:9px;background:var(--gold);border-radius:50%;box-shadow:0 0 18px rgba(237,196,111,.8)}
-.btn{box-shadow:0 8px 26px rgba(0,0,0,.14);transition:transform .25s ease,box-shadow .25s ease,background .25s ease}
-.btn:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(0,0,0,.25)}
-.hero{isolation:isolate}
-.hero-bg img{object-position:center 42%;transform:scale(1.025);animation:heroReveal 1.2s ease-out both}
-.hero-content{animation:heroText .85s .12s ease-out both}
-.hero h1{text-wrap:balance;text-shadow:0 8px 38px rgba(0,0,0,.28)}
-.section{position:relative}
-.section-head{max-width:760px}
-.section h2{max-width:900px}
-.about-grid>div:first-child{padding:10px 0}
-.image-stack figure,.gallery-grid figure{border-radius:4px;box-shadow:0 20px 50px rgba(0,0,0,.18)}
-.pill{border-radius:999px;padding:8px 14px}
-.casting{position:relative;overflow:hidden}
-.casting:before{content:"";position:absolute;width:420px;height:420px;right:-190px;top:-170px;border:1px solid rgba(124,87,25,.22);border-radius:50%;box-shadow:0 0 0 35px rgba(124,87,25,.035),0 0 0 75px rgba(124,87,25,.025);pointer-events:none}
-.event-card,.form-panel{border-radius:5px;box-shadow:0 22px 55px rgba(0,0,0,.14)}
-.event-card{border:1px solid rgba(255,255,255,.08)}
-.form-panel{border:1px solid rgba(0,0,0,.07)}
-.field input,.field select,.field textarea{border-radius:3px;transition:border-color .2s,box-shadow .2s}
-.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:#a8792e;box-shadow:0 0 0 3px rgba(168,121,46,.15)}
-.banner-strip{padding:30px 0;background:linear-gradient(110deg,#edc46f,#f6dfaa);color:#1a160e}
-.banner-inner{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
-.banner-strip .eyebrow{color:#72501b}
-.banner-title{font-size:clamp(1.5rem,3vw,2.6rem);line-height:1.05;letter-spacing:-.04em;font-weight:900;margin:6px 0}
-.banner-copy{margin:0;color:#4e4027;max-width:620px}
-.banner-strip .btn{background:#171510;color:#fff;border-color:#171510;box-shadow:none}
-.banner-dark{padding:34px 0;background:#191917;border-block:1px solid var(--line)}
-.banner-dark .banner-inner{gap:20px}
-.banner-dark .banner-title{color:#f5f1e8}
-.banner-dark .banner-copy{color:#c7c0b4}
-.banner-dark .eyebrow{color:var(--gold)}
-.reveal{opacity:0;transform:translateX(-34px);transition:opacity .75s ease,transform .75s cubic-bezier(.2,.7,.2,1)}
-.reveal.from-right{transform:translateX(34px)}
-.reveal.is-visible{opacity:1;transform:translateX(0)}
-.footer{border-top:1px solid var(--line);background:#0b0b0a}
-.footer strong{font-size:.82rem}
-@keyframes heroReveal{from{transform:scale(1.09);filter:brightness(.4)}to{transform:scale(1.025);filter:brightness(.64)}}
-@keyframes heroText{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
-@media(max-width:760px){
-.banner-inner{align-items:flex-start}
-.banner-strip,.banner-dark{padding:25px 0}
-.hero-bg img{object-position:center center}
-.reveal,.reveal.from-right{transform:translateY(22px)}
-}
-@media(prefers-reduced-motion:reduce){
-.hero-bg img,.hero-content{animation:none}
-.reveal,.reveal.from-right{opacity:1;transform:none;transition:none}
-}
+  <style>
+    :root {
+      --background: #101410;
+      --surface: #1a201b;
+      --text: #f5f5f0;
+      --accent: #c6ff4d;
+      --muted: #a7afa4;
+      --border: rgba(255, 255, 255, .13);
+    }
 
-/* NUEVA DIRECCIÓN VISUAL — AMIGOS / FRIENDS */
-:root{--bg:#f5f3ed;--panel:#fffdf8;--text:#17211e;--muted:#66716b;--gold:#f5a623;--line:rgba(23,33,30,.13);--max:1240px;--ink:#14221e;--lime:#c8ed72;--coral:#ff765e}
-html{scroll-padding-top:88px}
-body{background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.65}
-a{color:inherit}
-.wrap{width:min(var(--max),calc(100% - 56px))}
-.topbar{position:fixed;top:0;padding:13px 0;background:rgba(17,31,27,.72);backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,.13);transition:background .25s}
-.brand{font-size:.78rem;letter-spacing:.16em;color:#fff}
-.brand:before{width:10px;height:10px;background:var(--lime);box-shadow:0 0 20px #c8ed72}
-.navlinks{gap:27px}
-.navlinks a{color:#fff;font-weight:650}
-.navlinks a:not(.btn){opacity:.85;transition:opacity .2s}
-.navlinks a:not(.btn):hover{opacity:1}
-.btn{border:0;border-radius:999px;background:var(--lime);color:#17211e;padding:15px 23px;font-size:.75rem;letter-spacing:.055em;box-shadow:0 12px 30px rgba(0,0,0,.17);transition:transform .25s,box-shadow .25s,background .25s}
-.btn:hover{background:#d9ff8a;transform:translateY(-4px);box-shadow:0 18px 38px rgba(0,0,0,.22)}
-.btn.outline{border:1px solid rgba(255,255,255,.65);background:rgba(255,255,255,.08);color:white;box-shadow:none}
-.btn.outline:hover{background:#fff;color:#14221e}
-.hero{min-height:min(940px,100svh);align-items:center;background:#17251f}
-.hero-bg:before{content:"";position:absolute;z-index:1;inset:0;background:linear-gradient(90deg,rgba(9,22,18,.82) 0%,rgba(9,22,18,.48) 48%,rgba(9,22,18,.05) 100%),linear-gradient(0deg,rgba(9,22,18,.48),transparent 38%);pointer-events:none}
-.hero-bg img{object-position:center 48%;filter:brightness(.82) saturate(1.12);transform:scale(1.015);animation:heroDrift 22s ease-in-out infinite alternate}
-.hero:after{display:none}
-.hero-content{max-width:850px;padding:180px 0 115px}
-.hero .eyebrow{display:inline-flex;align-items:center;gap:12px;color:var(--lime);font-size:.72rem;letter-spacing:.23em}
-.hero .eyebrow:before{content:"";width:34px;height:1px;background:var(--lime)}
-.hero h1{font-size:clamp(5.4rem,13vw,11.8rem);letter-spacing:-.095em;line-height:.76;margin:32px 0 30px;text-shadow:0 12px 55px rgba(0,0,0,.35)}
-.hero h1 span{font-size:.22em;letter-spacing:.25em;margin-top:31px;color:var(--lime);font-weight:800}
-.hero p{font-size:clamp(1.08rem,2vw,1.35rem);max-width:570px;color:rgba(255,255,255,.9);line-height:1.55}
-.hero-note{font-size:.68rem;color:rgba(255,255,255,.72);letter-spacing:.2em}
-.hero-content:after{content:"";display:block;width:74px;height:4px;border-radius:4px;background:var(--coral);margin-top:34px}
-.banner-strip{background:var(--lime);color:#17211e;padding:27px 0}
-.banner-strip .eyebrow{color:#42552b}
-.banner-title{font-size:clamp(1.65rem,3.3vw,2.8rem);letter-spacing:-.055em}
-.banner-copy{color:#45523c}
-.banner-strip .btn{background:#17211e;color:white;border:0}
-.banner-strip .btn:hover{background:#294239}
-.section{padding:clamp(76px,9vw,130px) 0}
-.section-head{margin-bottom:54px}
-.eyebrow{color:#b46d12;font-size:.69rem;letter-spacing:.22em}
-.section h2{font-size:clamp(2.7rem,6.5vw,5.5rem);letter-spacing:-.075em;line-height:.94;color:#17211e}
-.lead{color:#5d6962;font-size:1.12rem;line-height:1.75}
-.about-grid{gap:clamp(35px,6vw,90px)}
-.about-grid>div:first-child{max-width:560px}
-.image-stack{gap:16px;position:relative}
-.image-stack:before{content:"";position:absolute;z-index:0;width:150px;height:150px;border:1px solid rgba(245,166,35,.65);border-radius:50%;top:-34px;right:-34px}
-.image-stack figure{position:relative;z-index:1;border-radius:18px;box-shadow:0 24px 60px rgba(28,42,34,.13)}
-.image-stack figure:first-child{height:470px}
-.image-stack figure:last-child{height:360px;margin-top:78px}
-.image-stack img,.gallery-grid img{transition:transform .8s cubic-bezier(.2,.7,.2,1),filter .6s}
-.image-stack figure:hover img,.gallery-grid figure:hover img{transform:scale(1.055);filter:saturate(1.12)}
-.pill{background:#fff;border:1px solid rgba(23,33,30,.12);border-radius:999px;color:#33443b;padding:9px 15px;font-size:.8rem;font-weight:650}
-.quote-section{background:#17251f;border:0;color:#fff;overflow:hidden}
-.quote-section .eyebrow{color:var(--lime)}
-.quote{font-size:clamp(2.1rem,5vw,4.6rem);letter-spacing:-.065em;line-height:1.08;max-width:1000px;color:#fff}
-.quote em{color:var(--lime)}
-.quote-line{display:block}
-.quote em.quote-line{margin-top:.16em}
-.gallery-title span{display:block}
-.gallery-title span+span{margin-top:.08em}
-.quote-section .wrap{position:relative}
-.quote-section .wrap:after{content:"“";position:absolute;right:3%;top:-105px;font-family:Georgia,serif;font-size:22rem;line-height:1;color:rgba(200,237,114,.08);pointer-events:none}
-#galeria{background:#eae9e1}
-.gallery-grid{grid-template-columns:1.12fr .88fr;gap:18px}
-.gallery-grid figure{border-radius:18px;box-shadow:0 24px 65px rgba(25,38,31,.13)}
-.gallery-large{height:650px}
-.gallery-small{height:650px}
-.gallery-grid figure:after{background:linear-gradient(transparent 45%,rgba(9,22,18,.7))}
-.gallery-grid figcaption{left:28px;bottom:27px;color:white;font-size:.72rem;letter-spacing:.18em}
-.banner-dark{background:#d9e7cf;border:0;color:#17211e;padding:35px 0}
-.banner-dark .banner-title{color:#17211e}
-.banner-dark .banner-copy{color:#50604f}
-.banner-dark .eyebrow{color:#56733c}
-.banner-dark .btn{background:#17211e;color:white}
-.casting{background:#f5f3ed;color:#17211e;overflow:hidden}
-.casting:before{width:560px;height:560px;right:-180px;top:-200px;border-color:rgba(70,111,67,.17);box-shadow:0 0 0 45px rgba(70,111,67,.035),0 0 0 95px rgba(70,111,67,.025)}
-.casting .eyebrow{color:#a66a1a}
-.casting .lead{color:#5c6961}
-.casting-layout{grid-template-columns:.82fr 1.18fr;gap:36px}
-.event-card{background:#17251f;border:0;border-radius:20px;padding:36px;box-shadow:0 28px 70px rgba(20,34,30,.18)}
-.event-card .eyebrow{color:var(--lime)}
-.event-card h3{font-size:clamp(2.2rem,4vw,3.1rem);letter-spacing:-.06em}
-.event-line{border-color:rgba(255,255,255,.14)}
-.event-line span{color:#d5dfd6}
-.requirements{gap:12px}
-.requirement{border:1px solid rgba(23,33,30,.1);border-radius:12px;background:#fff;padding:19px}
-.requirement strong{color:#24372d}
-.requirement small{color:#657168}
-.form-panel{border:1px solid rgba(23,33,30,.08);border-radius:20px;background:#fff;padding:clamp(22px,4vw,38px);box-shadow:0 22px 65px rgba(20,34,30,.09)}
-.form-panel h3{font-size:2.2rem;letter-spacing:-.06em;color:#17211e}
-.form-panel>p{color:#66716b}
-.field label{color:#34453b}
-.field input,.field select,.field textarea{border:1px solid #d8ded6;background:#fbfcf8;border-radius:10px;padding:14px 15px;transition:border .2s,box-shadow .2s}
-.field input:focus,.field select:focus,.field textarea:focus{border-color:#8aaa62;box-shadow:0 0 0 4px rgba(140,177,96,.16)}
-.check{color:#59665e}
-.form-note{color:#778178;line-height:1.55}
-.form-panel .btn{background:#17251f;color:white;border-radius:999px;padding:17px}
-.form-panel .btn:hover{background:#2e4b3c}
-.toast{border-radius:10px;background:#e7f1d9;color:#2d4526}
-section:not(.hero){scroll-margin-top:82px}
-.reveal{transform:translateY(36px);transition:opacity .85s ease,transform .85s cubic-bezier(.2,.75,.2,1)}
-.reveal.from-right{transform:translateY(36px)}
-.reveal.is-visible{transform:translateY(0)}
-.footer{background:#101d19;border:0;padding:52px 0 36px}
-.footer strong{color:#fff;font-size:.86rem}
-.footer p{color:#aab8ae}
-.footer-links a{color:#e6eee7;transition:color .2s}
-.footer-links a:hover{color:var(--lime)}
-@keyframes heroDrift{from{transform:scale(1.015) translateX(0)}to{transform:scale(1.08) translateX(-1.2%)}}
+    * {
+      box-sizing: border-box;
+    }
 
-@media(max-width:760px){
-.wrap{width:calc(100% - 34px)}
-.topbar{padding:10px 0}
-.brand{font-size:.69rem}
-.navlinks{gap:0}
-.navlinks .btn{padding:11px 14px;font-size:.63rem}
-.hero{min-height:850px;min-height:100svh;align-items:flex-end}
-.hero-bg img{object-position:58% center}
-.hero-bg:before{background:linear-gradient(0deg,rgba(9,22,18,.9) 0%,rgba(9,22,18,.56) 50%,rgba(9,22,18,.12) 100%)}
-.hero-content{padding:150px 0 75px}
-.hero h1{font-size:clamp(5rem,22vw,8rem);margin:27px 0}
-.hero h1 span{font-size:.2em;letter-spacing:.18em;margin-top:24px}
-.hero p{font-size:1.04rem}
-.actions{gap:10px}
-.actions .btn{padding:14px 17px}
-.section{padding:76px 0}
-.section-head{margin-bottom:35px}
-.about-grid,.casting-layout,.gallery-grid{grid-template-columns:1fr;gap:35px}
-.image-stack figure:first-child{height:390px}
-.image-stack figure:last-child{height:290px;margin-top:38px}
-.image-stack:before{width:100px;height:100px;right:-12px;top:-18px}
-.gallery-large{height:470px}
-.gallery-small{height:390px}
-.gallery-grid{gap:14px}
-.event-card{position:static;padding:26px}
-.requirements{grid-template-columns:1fr 1fr}
-.form-panel{padding:23px}
-.form-grid{grid-template-columns:1fr}
-.field.full{grid-column:auto}
-.banner-inner{align-items:flex-start}
-.quote-section .wrap:after{font-size:13rem;top:-35px;right:0}
-.footer-row{align-items:flex-start}
-.footer-links{gap:13px}
-}
-@media(max-width:390px){.requirements{grid-template-columns:1fr}.hero h1{font-size:4.8rem}.navlinks .btn{font-size:.58rem;padding:10px 11px}}
-@media(prefers-reduced-motion:reduce){.hero-bg img{animation:none}.reveal,.reveal.from-right{opacity:1;transform:none;transition:none}.btn,.image-stack img,.gallery-grid img{transition:none}}
+    html {
+      min-height: 100%;
+      background: var(--background);
+    }
 
-/* Ajustes solicitados: hero con texto más arriba, sin menú ni botones */
-.hero{
-  align-items:flex-start !important;
-  min-height:100svh;
-}
-.hero-content{
-  margin-left:max(calc((100% - var(--max))/2),28px) !important;
-  margin-right:28px !important;
-  padding-top:65px !important;
-  padding-bottom:45px !important;
-  max-width:790px;
-}
-.hero h1{
-  margin-top:20px !important;
-  margin-bottom:22px !important;
-}
-.hero h1 span{margin-top:20px !important}
-.hero .actions{display:none !important}
+    body {
+      margin: 0;
+      min-height: 100vh;
+      min-height: 100svh;
+      display: flex;
+      flex-direction: column;
+      color: var(--text);
+      background:
+        radial-gradient(
+          ellipse at 50% 35%,
+          rgba(111, 145, 78, .16),
+          transparent 65%
+        ),
+        var(--background);
+      font-family: Arial, Helvetica, sans-serif;
+    }
 
-/* Fondo general */
-html{background:#101d19}
-body{background:#101d19}
-main{
-  background-image:linear-gradient(rgba(7,18,14,.56),rgba(7,18,14,.56)),url("https://iili.io/nwP1ypR.md.jpg");
-  background-position:center center;
-  background-size:cover;
-  background-repeat:no-repeat;
-  background-attachment:fixed;
-}
-#pelicula{background:rgba(245,243,237,.88)}
-#galeria{background:rgba(231,233,225,.88)}
-.quote-section{background:rgba(20,37,31,.88)}
-.banner-strip{background:rgba(217,245,139,.94)}
-.banner-dark{background:rgba(226,234,220,.93)}
-.casting{background:rgba(242,240,232,.91)}
-.footer{background:#101d19!important}
-.hero-second-image{display:none!important}
+    main {
+      width: 100%;
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 32px 20px;
+    }
 
-/* Historia */
-.story-banner-image{width:100%;height:clamp(250px,42vw,520px);margin:42px 0 0;overflow:hidden;border-radius:18px;position:relative;background:#17251f;box-shadow:0 24px 65px rgba(0,0,0,.18)}
-.story-banner-image img{width:100%;height:100%;object-fit:cover;object-position:center 48%;display:block;transition:transform .8s ease}
-.story-banner-image:hover img{transform:scale(1.025)}
-#pelicula .about-grid{grid-template-columns:1fr}
-#pelicula .about-grid>div:first-child{max-width:900px}
-#pelicula .pill-row{margin-top:22px}
-#galeria .section-head{margin-bottom:0}
-#galeria{min-height:260px}
-@media(max-width:760px){.story-banner-image{height:260px;margin-top:28px;border-radius:12px}#pelicula .about-grid{gap:20px}}
+    .content {
+      width: 100%;
+      max-width: 1050px;
+      margin: 0 auto;
+      text-align: center;
+    }
 
-/* Convocatoria e imagen en bloques independientes */
-.banner-inner-stacked{display:flex;flex-direction:column;align-items:flex-start;gap:18px}
-.banner-intro{width:100%}
-.banner-inner-stacked>.btn{align-self:flex-start}
-.convocatoria-image-section{width:100%;padding:34px 0 46px;background:rgba(7,18,14,.20)}
-.convocatoria-banner-image{width:min(1180px,calc(100% - 40px));margin:0 auto;overflow:hidden;border-radius:14px;line-height:0;box-shadow:0 18px 45px rgba(0,0,0,.22)}
-.convocatoria-banner-image img{display:block;width:100%;height:auto;max-height:none;object-fit:contain;object-position:center;image-rendering:auto}
-.story-banner-image{display:none!important}
-@media(max-width:760px){.banner-inner-stacked{gap:15px}.banner-inner-stacked>.btn{align-self:stretch}.convocatoria-image-section{padding:22px 0 30px}.convocatoria-banner-image{width:calc(100% - 28px);border-radius:10px}}
+    .eyebrow {
+      margin: 0 0 24px;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .28em;
+      text-transform: uppercase;
+    }
 
-.historia-banner-image{width:100%;margin:0 0 48px;overflow:hidden;border-radius:14px;line-height:0;box-shadow:0 20px 55px rgba(0,0,0,.2)}
-.historia-banner-image img{display:block;width:100%;height:auto;max-height:none;object-fit:contain;image-rendering:auto}
-@media(max-width:760px){.historia-banner-image{margin-bottom:30px;border-radius:10px}}
+    h1 {
+      margin: 0;
+      color: var(--text);
+      font-size: clamp(38px, 8.5vw, 96px);
+      font-weight: 900;
+      line-height: .98;
+      letter-spacing: -.055em;
+      overflow-wrap: anywhere;
+    }
 
-.gallery-intro{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(280px,.85fr);gap:42px;align-items:center;max-width:none;margin-bottom:0}
-.gallery-intro .section-head{margin:0;max-width:760px}
-.gallery-side-image{margin:0;height:100%;min-height:290px;max-height:390px;overflow:hidden;border-radius:8px;box-shadow:0 20px 48px rgba(0,0,0,.24);border:1px solid rgba(255,255,255,.16)}
-.gallery-side-image img{width:100%;height:100%;min-height:290px;object-fit:cover;object-position:center}
-.map-frame{margin-top:16px;border-radius:12px;overflow:hidden;border:1px solid rgba(255,255,255,.16);background:#222;box-shadow:0 12px 30px rgba(0,0,0,.18)}
-.map-frame iframe{display:block;width:100%;height:250px;border:0}
-.map-link{display:inline-flex;margin-top:10px;color:#d9b870;font-size:.82rem;font-weight:800;text-decoration:none}
-.footer{padding-bottom:26px}
-.footer-contact{display:flex;flex-wrap:wrap;gap:12px 20px;margin-top:14px}
-.footer-contact a{display:inline-flex;align-items:center;gap:9px;color:#e4ece5;text-decoration:none;font-size:.88rem}
-.footer-contact .social-icon{width:20px;height:20px;flex:0 0 20px;display:inline-flex;align-items:center;justify-content:center;color:var(--gold)}
-.footer-contact .social-icon svg{width:19px;height:19px;display:block;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
-.footer-contact a:hover,.creator-credit a:hover{color:var(--lime)}
-.creator-credit{border-top:1px solid rgba(255,255,255,.13);margin-top:28px;padding-top:20px;text-align:center;color:#aab8ae;font-size:.78rem;letter-spacing:.08em}
-.creator-credit a{color:#fff;font-weight:900;text-decoration:none;letter-spacing:.12em}
-@media(max-width:760px){.gallery-intro{grid-template-columns:1fr;gap:24px}.gallery-side-image{min-height:220px;max-height:300px}.gallery-side-image img{min-height:220px}.map-frame iframe{height:230px}.footer-contact{flex-direction:column;gap:9px}.creator-credit{line-height:1.8}}
+    .divider {
+      width: 76px;
+      height: 5px;
+      margin: 32px auto;
+      background: var(--accent);
+      border-radius: 10px;
+    }
 
-/* Contador de cierre de inscripciones */
-.casting-countdown{margin:-12px 0 38px;padding:24px 28px;border-radius:18px;background:#17251f;color:#fff;display:flex;align-items:center;justify-content:space-between;gap:22px;box-shadow:0 18px 48px rgba(20,34,30,.13)}
-.countdown-label{font-weight:850;letter-spacing:.04em;font-size:1rem}
-.countdown-units{display:flex;gap:10px}
-.countdown-units div{min-width:74px;text-align:center;padding:10px 12px;border:1px solid rgba(255,255,255,.16);border-radius:12px;background:rgba(255,255,255,.06)}
-.countdown-units strong{display:block;font-size:clamp(1.5rem,3vw,2.15rem);line-height:1.1;color:#d9f58b;font-variant-numeric:tabular-nums}
-.countdown-units small{font-size:.58rem;letter-spacing:.12em;color:#d5dfd6;font-weight:800}
-.casting-countdown p{margin:0;color:#d5dfd6;font-size:.78rem;max-width:170px}
-@media(max-width:760px){.casting-countdown{margin:0 0 28px;align-items:flex-start;flex-direction:column;padding:22px}.countdown-units{width:100%;gap:7px}.countdown-units div{flex:1;min-width:0;padding:10px 4px}.casting-countdown p{max-width:none}}
+    .message {
+      margin: 0 auto;
+      max-width: 950px;
+      color: var(--accent);
+      font-size: clamp(29px, 6.2vw, 70px);
+      font-weight: 900;
+      line-height: 1.12;
+      letter-spacing: -.035em;
+      text-transform: uppercase;
+      overflow-wrap: anywhere;
+    }
 
-/* Ajuste final: ocultar por completo el menú y subir el texto en todos los tamaños */
-header.topbar{display:none!important}
-.hero{align-items:flex-start!important}
-.hero-content{
-  width:min(100% - 56px,var(--max));
-  max-width:790px;
-  margin:0 auto!important;
-  padding:65px 0 45px!important;
-}
-.hero .actions{display:none!important}
-@media(max-width:760px){
-  .hero{min-height:100svh;align-items:flex-start!important}
-  .hero-content{
-    width:calc(100% - 34px);
-    margin:0 auto!important;
-    padding:58px 0 35px!important;
-  }
-  .hero h1{
-    font-size:clamp(4.2rem,19vw,7rem);
-    margin-top:18px!important;
-    margin-bottom:20px!important;
-  }
-  .hero h1 span{margin-top:18px!important}
-}
-</style>
+    .context {
+      max-width: 660px;
+      margin: 30px auto 0;
+      color: var(--muted);
+      font-size: clamp(14px, 2vw, 17px);
+      line-height: 1.7;
+    }
+
+    footer {
+      padding: 18px 20px;
+      border-top: 1px solid var(--border);
+      color: #778075;
+      text-align: center;
+      font-size: 11px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    @media (max-width: 480px) {
+      main {
+        padding: 28px 18px;
+      }
+
+      .eyebrow {
+        font-size: 10px;
+        letter-spacing: .2em;
+      }
+
+      .divider {
+        margin: 25px auto;
+      }
+
+      .context {
+        margin-top: 24px;
+      }
+
+      footer {
+        font-size: 9px;
+        letter-spacing: .08em;
+      }
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+      .content {
+        animation: appear .7s ease-out both;
+      }
+
+      @keyframes appear {
+        from {
+          opacity: 0;
+          transform: translateY(12px);
+        }
+
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    }
+  </style>
 </head>
 
 <body>
-<main>
-<section class="hero" id="inicio">
-  <div class="hero-bg">
-    <img src="https://iili.io/nwPxELQ.md.png" alt="Imagen principal del cortometraje AMIGOS / FRIENDS" fetchpriority="high">
-  </div>
-  <div class="wrap hero-content">
-    <div class="eyebrow">Visión Profesional presenta</div>
-    <h1>AMIGOS<span>FRIENDS · CORTOMETRAJE</span></h1>
-    <p>Una historia de amistad, fútbol y sueños de barrio. Los recuerdos más grandes muchas veces empiezan con una pelota y un amigo.</p>
-  </div>
-</section>
+  <main>
+    <section class="content">
+      <p class="eyebrow">Un reclamo por trabajo realizado</p>
 
-<section class="banner-strip" aria-label="Convocatoria destacada">
-  <div class="wrap banner-inner banner-inner-stacked">
-    <div class="banner-intro">
-      <div class="eyebrow">Convocatoria abierta · 2026</div>
-      <p class="banner-title">Tu historia puede ser parte de AMIGOS.</p>
-      <p class="banner-copy">Buscamos chicos de 8 a 12 años que disfruten del fútbol y quieran vivir una experiencia audiovisual.</p>
-    </div>
-    <a class="btn" href="#casting">Ver detalles del casting ↗</a>
-  </div>
-</section>
+      <h1>CARLOS GALAUS</h1>
 
-<section class="section reveal" id="pelicula">
-  <div class="wrap">
-    <figure class="historia-banner-image">
-      <img src="https://iili.io/nwiJiNI.md.png" alt="Banner de AMIGOS / FRIENDS" loading="eager" decoding="async">
-    </figure>
-  </div>
-  <div class="wrap about-grid">
-    <div>
-      <div class="eyebrow">Una historia que nos une</div>
-      <h2>El fútbol es el juego.<br>La amistad es todo.</h2>
-      <p class="lead">AMIGOS / FRIENDS es un proyecto audiovisual de Visión Profesional que celebra la amistad, el compañerismo y esos momentos de la infancia que quedan para siempre.</p>
-      <p>En una cancha de barrio, entre partidos, risas y sueños, los amigos aprenden que jugar juntos también significa acompañarse, crecer y estar presentes.</p>
-      <div class="pill-row"><span class="pill">Amistad</span><span class="pill">Fútbol</span><span class="pill">Barrio</span><span class="pill">Infancia</span></div>
-    </div>
-  </div>
-</section>
+      <div class="divider" aria-hidden="true"></div>
 
-<section class="section quote-section reveal from-right">
-  <div class="wrap">
-    <div class="eyebrow">La esencia de Amigos</div>
-    <p class="quote"><span class="quote-line">“Hay partidos que terminan cuando cae el sol.”</span><em class="quote-line">La amistad que nace ahí puede durar toda la vida.</em></p>
-  </div>
-</section>
+      <p class="message">
+        ¡ME PEDISTE EL TRABAJO Y NO LO PAGASTE!
+      </p>
 
-<section class="section reveal gallery-section-break" id="galeria">
-  <div class="wrap">
-    <div class="gallery-intro">
-      <div class="section-head">
-        <div class="eyebrow">Imágenes del proyecto</div>
-        <h2 class="gallery-title"><span>Un barrio.</span><span>Una pelota.</span><span>Mil recuerdos.</span></h2>
-        <p class="lead">Una mirada cercana y cinematográfica sobre la infancia, la cancha y los amigos.</p>
-      </div>
-      <figure class="gallery-side-image">
-        <img src="https://iili.io/nwiWvyu.md.png" alt="Escena del proyecto AMIGOS / FRIENDS: un barrio, una pelota y recuerdos de infancia" loading="lazy" decoding="async">
-      </figure>
-    </div>
-  </div>
-</section>
+      <p class="context">
+        Reclamo por un trabajo realizado cuyo pago está pendiente,
+        según lo expresado por quien realiza este reclamo.
+      </p>
+    </section>
+  </main>
 
-<section class="banner-dark" aria-label="Información del casting">
-  <div class="wrap banner-inner">
-    <div>
-      <div class="eyebrow">Próximo casting presencial</div>
-      <p class="banner-title">Domingo 8 de noviembre · Don Torcuato</p>
-      <p class="banner-copy">Revisá los requisitos y prepará la información antes de completar la postulación.</p>
-    </div>
-    <a class="btn" href="#casting">Inscribirse ahora ↗</a>
-  </div>
-</section>
-
-<section class="section casting reveal from-right" id="casting">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="eyebrow">Convocatoria · Sin fines de lucro</div>
-      <h2>CASTING<br>AMIGOS 2026</h2>
-      <p class="lead">Buscamos chicos de 8 a 12 años que disfruten del fútbol y quieran formar parte de esta historia. ¡Cupos limitados!</p>
-    </div>
-
-    <div class="casting-countdown" aria-live="polite">
-      <span class="countdown-label">Tiempo restante para inscribirse</span>
-      <div class="countdown-units">
-        <div><strong id="cd-days">--</strong><small>DÍAS</small></div>
-        <div><strong id="cd-hours">--</strong><small>HORAS</small></div>
-        <div><strong id="cd-minutes">--</strong><small>MINUTOS</small></div>
-        <div><strong id="cd-seconds">--</strong><small>SEGUNDOS</small></div>
-      </div>
-      <p id="cd-message">Inscripciones abiertas hasta el 31 de octubre de 2026.</p>
-    </div>
-
-    <div class="casting-layout">
-      <aside class="event-card">
-        <div class="eyebrow">Agendá la fecha</div>
-        <h3>Domingo<br>8 de noviembre</h3>
-
-        <div class="event-line">
-          <span aria-hidden="true">◷</span>
-          <div><b>Horario</b><span>De 10:00 a 13:00 hs.</span></div>
-        </div>
-
-        <div class="event-line">
-          <span aria-hidden="true">⌖</span>
-          <div><b>Ubicación</b><span>Quinta Lo de Tapi, Posadas 3247, Don Torcuato, Buenos Aires.</span></div>
-        </div>
-
-        <div class="map-frame" aria-label="Mapa interactivo de Quinta Lo de Tapi">
-          <iframe title="Cómo llegar a Quinta Lo de Tapi, Posadas 3247, Don Torcuato" src="https://www.google.com/maps?q=Posadas+3247,+Don+Torcuato,+Buenos+Aires&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
-        </div>
-
-        <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Posadas+3247,+Don+Torcuato,+Buenos+Aires" target="_blank" rel="noopener">Abrir indicaciones en Google Maps ↗</a>
-
-        <div class="event-line">
-          <span aria-hidden="true">◎</span>
-          <div><b>Edades</b><span>Niños de 8 a 12 años.</span></div>
-        </div>
-
-        <div class="event-line">
-          <span aria-hidden="true">▣</span>
-          <div><b>Cierre de inscripción</b><span>31 de octubre de 2026.</span></div>
-        </div>
-
-        <p class="fineprint" style="color:#cfc6b7">La participación es sin fines de lucro. La selección final será realizada por el equipo del proyecto.</p>
-        <a class="btn" style="width:100%;margin-top:12px" href="https://wa.me/54911557343551?text=Hola%2C%20quiero%20consultar%20por%20el%20casting%20del%20cortometraje%20AMIGOS." target="_blank" rel="noopener">Consultar por WhatsApp ↗</a>
-      </aside>
-
-      <div class="form-panel">
-        <h3>Postulá a tu hijo</h3>
-        <p>Completá los datos para preparar el mensaje de inscripción. El envío se realiza por WhatsApp al equipo de Visión Profesional.</p>
-
-        <form id="castingForm">
-          <div class="form-grid">
-            <div class="field"><label for="nombre">Nombre del postulante *</label><input id="nombre" name="nombre" autocomplete="given-name" required></div>
-            <div class="field"><label for="apellido">Apellido *</label><input id="apellido" name="apellido" autocomplete="family-name" required></div>
-            <div class="field"><label for="nacimiento">Fecha de nacimiento *</label><input id="nacimiento" name="nacimiento" type="date" required min="2013-11-09" max="2018-11-08"></div>
-            <div class="field"><label for="localidad">Localidad *</label><input id="localidad" name="localidad" required autocomplete="address-level2"></div>
-            <div class="field"><label for="responsable">Nombre y apellido del adulto responsable *</label><input id="responsable" name="responsable" required autocomplete="name"></div>
-            <div class="field"><label for="celular">Celular del responsable *</label><input id="celular" name="celular" type="tel" required autocomplete="tel" placeholder="Código de área + número"></div>
-            <div class="field"><label for="email">E-mail de contacto</label><input id="email" name="email" type="email" autocomplete="email"></div>
-            <div class="field"><label for="dni">DNI del postulante</label><input id="dni" name="dni" inputmode="numeric" autocomplete="off" placeholder="Opcional para la consulta inicial"></div>
-            <div class="field full"><label for="club">¿Juega actualmente en algún club?</label><input id="club" name="club" placeholder="Nombre del club o 'No juega en un club'"></div>
-            <div class="field full"><label for="historia">Breve historia (aprox. 5 líneas): ¿quién es, quién es su mejor amigo y qué lugar ocupa el fútbol en su vida? *</label><textarea id="historia" name="historia" required maxlength="1200" placeholder="Contanos un poco sobre él..."></textarea></div>
-          </div>
-
-          <label class="check"><input id="autorizacion" type="checkbox" required><span>Confirmo que soy padre, madre, tutor o responsable autorizado del menor y acepto enviar estos datos para gestionar la postulación al casting.</span></label>
-          <p class="form-note">Importante: prepará dos fotos recientes (una con ropa de fútbol y otra con ropa normal). El formulario no sube imágenes ni documentos; coordiná por WhatsApp cómo enviarlos de forma privada. El DNI del menor y del adulto responsable serán documentación requerida para el casting. No publiques estos documentos en redes.</p>
-          <button class="btn" type="submit">Preparar inscripción por WhatsApp ↗</button>
-          <div class="toast" id="formMessage" role="status" aria-live="polite"></div>
-        </form>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section reveal">
-  <div class="wrap">
-    <div class="eyebrow">Visión Profesional</div>
-    <p class="quote">Las mejores historias no siempre necesitan grandes estadios. A veces, <em>todo empieza en la cancha del barrio.</em></p>
-    <div class="actions">
-      <a class="btn" href="https://wa.me/54911557343551?text=Hola%2C%20quiero%20recibir%20informaci%C3%B3n%20sobre%20AMIGOS%20%2F%20FRIENDS." target="_blank" rel="noopener">Contactar al equipo ↗</a>
-      <a class="btn outline" href="mailto:elnuevosonido1@hotmail.com">Enviar un e-mail</a>
-    </div>
-  </div>
-</section>
-</main>
-
-<footer class="footer">
-  <div class="wrap">
-    <div class="footer-row">
-      <div>
-        <strong>VISIÓN PROFESIONAL</strong>
-        <p>AMIGOS / FRIENDS · Cortometraje</p>
-        <div class="footer-contact">
-          <a href="https://www.instagram.com/carlosgalaus/" target="_blank" rel="noopener">
-            <span class="social-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor" stroke="none"/></svg></span>
-            Instagram · @carlosgalaus ↗
-          </a>
-          <a href="mailto:elnuevosonido1@hotmail.com">
-            <span class="social-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg></span>
-            elnuevosonido1@hotmail.com
-          </a>
-          <a href="https://wa.me/5491157343551" target="_blank" rel="noopener">
-            <span class="social-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20l1.2-4.7A8.5 8.5 0 1 1 20.5 11.5Z"/><path d="M8.5 8.5c.5 2.6 2.4 4.5 5 5l1.2-1.2 2 1c-.2 1.3-1.1 2-2.4 2-3.6-.5-6.5-3.4-7-7-.1-1.3.7-2.2 2-2.4l1 2-1.8 1.6Z"/></svg></span>
-            WhatsApp · 11 5734-3551 ↗
-          </a>
-        </div>
-      </div>
-      <div class="footer-links"><a href="#pelicula">El proyecto</a><a href="#galeria">Galería</a><a href="#casting">Casting</a></div>
-      <p>© <span id="year">2026</span> Visión Profesional</p>
-    </div>
-    <div class="creator-credit">CREADO Y DISEÑADO POR <a href="https://ciborg347.onrender.com" target="_blank" rel="noopener">CIBORG 347</a></div>
-  </div>
-</footer>
-
-<script>
-document.getElementById('year').textContent = new Date().getFullYear();
-
-// Cierre de inscripción: 31 de octubre de 2026 a las 23:59 (hora de Argentina).
-const deadline = new Date('2026-11-01T00:00:00-03:00').getTime();
-
-const updateCountdown = () => {
-  const remaining = deadline - Date.now();
-  const message = document.getElementById('cd-message');
-
-  if (remaining <= 0) {
-    ['cd-days','cd-hours','cd-minutes','cd-seconds'].forEach(id => {
-      document.getElementById(id).textContent = '00';
-    });
-    message.textContent = 'El período de inscripción ha finalizado.';
-    return;
-  }
-
-  const days = Math.floor(remaining / 86400000);
-  const hours = Math.floor((remaining % 86400000) / 3600000);
-  const minutes = Math.floor((remaining % 3600000) / 60000);
-  const seconds = Math.floor((remaining % 60000) / 1000);
-
-  document.getElementById('cd-days').textContent = String(days).padStart(2,'0');
-  document.getElementById('cd-hours').textContent = String(hours).padStart(2,'0');
-  document.getElementById('cd-minutes').textContent = String(minutes).padStart(2,'0');
-  document.getElementById('cd-seconds').textContent = String(seconds).padStart(2,'0');
-};
-
-updateCountdown();
-setInterval(updateCountdown, 1000);
-
-const revealItems = document.querySelectorAll('.reveal');
-
-if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-  const revealObserver = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('is-visible');
-        observer.unobserve(entry.target);
-      }
-    });
-  }, {threshold: 0.12, rootMargin: '0px 0px -35px 0px'});
-
-  revealItems.forEach(item => revealObserver.observe(item));
-} else {
-  revealItems.forEach(item => item.classList.add('is-visible'));
-}
-
-const form = document.getElementById('castingForm');
-
-form.addEventListener('submit', function(event) {
-  event.preventDefault();
-  if (!form.reportValidity()) return;
-
-  const val = id => document.getElementById(id).value.trim();
-
-  const message = [
-    'Hola, quiero postular a un menor al casting del cortometraje AMIGOS / FRIENDS.',
-    '',
-    'DATOS DEL POSTULANTE',
-    'Nombre y apellido: ' + val('nombre') + ' ' + val('apellido'),
-    'Fecha de nacimiento: ' + val('nacimiento'),
-    'Localidad: ' + val('localidad'),
-    'DNI del postulante: ' + (val('dni') || 'A coordinar'),
-    'Club: ' + (val('club') || 'No informado'),
-    '',
-    'ADULTO RESPONSABLE',
-    'Nombre y apellido: ' + val('responsable'),
-    'Celular: ' + val('celular'),
-    'E-mail: ' + (val('email') || 'No informado'),
-    '',
-    'BREVE HISTORIA',
-    val('historia'),
-    '',
-    'Entiendo que debo coordinar el envío privado de dos fotos y presentar la documentación requerida.'
-  ].join('\n');
-
-  const url = 'https://wa.me/54911557343551?text=' + encodeURIComponent(message);
-  const status = document.getElementById('formMessage');
-
-  status.textContent = 'Se abrirá WhatsApp con los datos preparados. Revisá el mensaje antes de enviarlo y adjuntá las dos fotos por separado.';
-  status.classList.add('show');
-
-  window.open(url, '_blank', 'noopener');
-});
-</script>
+  <footer>
+    Reclamo personal · Trabajo y pago
+  </footer>
 </body>
 </html>
+```
