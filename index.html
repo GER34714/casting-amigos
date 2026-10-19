@@ -224,6 +224,18 @@ body{
 .countdown-units strong{display:block;font-size:clamp(1.5rem,3vw,2.15rem);line-height:1.1;color:#d9f58b;font-variant-numeric:tabular-nums}.countdown-units small{font-size:.58rem;letter-spacing:.12em;color:#d5dfd6;font-weight:800}.casting-countdown p{margin:0;color:#d5dfd6;font-size:.78rem;max-width:170px}
 @media(max-width:760px){.casting-countdown{margin:0 0 28px;align-items:flex-start;flex-direction:column;padding:22px}.countdown-units{width:100%;gap:7px}.countdown-units div{flex:1;min-width:0;padding:10px 4px}.casting-countdown p{max-width:none}}
 
+
+/* Ajuste del fondo general para celulares:
+   ocupa el ancho disponible sin deformar la fotografía. */
+@media (max-width: 760px) {
+  body {
+    background-attachment: scroll;
+    background-position: center top;
+    background-size: 100% auto;
+    background-repeat: repeat-y;
+  }
+}
+
 </style>
 </head>
 <body>
