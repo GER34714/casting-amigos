@@ -5,22 +5,22 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>CARLOS GALAUS — Reclamo por trabajo impago</title>
-  <meta name="description" content="Reclamo público de un trabajador por un trabajo que afirma haber realizado y que todavía no le pagaron.">
+  <title>CARLOS GALAUS — ¡PAGÁ LO QUE DEBÉS!</title>
+  <meta name="description" content="Reclamo personal por trabajos pendientes de pago.">
   <meta name="theme-color" content="#101410">
 
   <meta property="og:type" content="website">
-  <meta property="og:title" content="CARLOS GALAUS — ¡Me pediste el trabajo y no lo pagaste!">
-  <meta property="og:description" content="Un reclamo por trabajo realizado y pago pendiente.">
+  <meta property="og:title" content="CARLOS GALAUS — ¡PAGÁ LO QUE DEBÉS!">
+  <meta property="og:description" content="¡No es el único trabajo que debés! Pagá lo que debés.">
 
   <style>
     :root {
       --background: #101410;
-      --surface: #1a201b;
       --text: #f5f5f0;
       --accent: #c6ff4d;
       --muted: #a7afa4;
       --border: rgba(255, 255, 255, .13);
+      --alert: #ff6969;
     }
 
     * {
@@ -104,6 +104,28 @@
       overflow-wrap: anywhere;
     }
 
+    .additional {
+      margin: 25px auto 0;
+      color: var(--alert);
+      font-size: clamp(23px, 5vw, 48px);
+      font-weight: 900;
+      line-height: 1.15;
+      letter-spacing: -.025em;
+      text-transform: uppercase;
+      overflow-wrap: anywhere;
+    }
+
+    .amount {
+      display: block;
+      margin: 22px auto 0;
+      color: var(--text);
+      font-size: clamp(40px, 9vw, 88px);
+      font-weight: 900;
+      line-height: 1;
+      letter-spacing: -.04em;
+      overflow-wrap: anywhere;
+    }
+
     .context {
       max-width: 660px;
       margin: 30px auto 0;
@@ -134,6 +156,14 @@
 
       .divider {
         margin: 25px auto;
+      }
+
+      .additional {
+        margin-top: 20px;
+      }
+
+      .amount {
+        margin-top: 18px;
       }
 
       .context {
@@ -169,7 +199,7 @@
 <body>
   <main>
     <section class="content">
-      <p class="eyebrow">Un reclamo por trabajo realizado</p>
+      <p class="eyebrow">Reclamo por trabajos pendientes de pago</p>
 
       <h1>CARLOS GALAUS</h1>
 
@@ -179,15 +209,21 @@
         ¡ME PEDISTE EL TRABAJO Y NO LO PAGASTE!
       </p>
 
+      <p class="additional">
+        ¡NO ES EL ÚNICO TRABAJO QUE DEBÉS!
+      </p>
+
+      <span class="amount">¡PAGÁ LO QUE DEBÉS!</span>
+
       <p class="context">
-        Reclamo por un trabajo realizado cuyo pago está pendiente,
-        según lo expresado por quien realiza este reclamo.
+        Reclamo personal por trabajos que, según quien realiza
+        este reclamo, todavía están pendientes de pago.
       </p>
     </section>
   </main>
 
   <footer>
-    Reclamo personal · Trabajo y pago
+    Reclamo personal · Trabajos y pagos pendientes
   </footer>
 </body>
 </html>
