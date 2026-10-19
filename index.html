@@ -7,7 +7,7 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="AMIGOS / FRIENDS — Una historia que nos une | Visión Profesional">
 <meta property="og:description" content="Una historia de amistad, fútbol y sueños de barrio. Conocé el proyecto y participá del casting infantil 2026 en Don Torcuato.">
-<meta property="og:image" content="https://iili.io/nwsv8mB.md.jpg">
+<meta property="og:image" content="https://iili.io/nwPxELQ.md.png">
 <meta property="og:image:alt" content="AMIGOS / FRIENDS — imagen principal del cortometraje">
 <meta property="og:locale" content="es_AR">
 <meta name="twitter:card" content="summary_large_image">
@@ -159,9 +159,10 @@ section:not(.hero){scroll-margin-top:82px}.reveal{transform:translateY(36px);tra
 @media(max-width:390px){.hero-content{padding-top:335px}.hero-second-image{top:86px;width:145px;height:195px}.hero h1{font-size:4.2rem}}
 
 
-/* FONDO GENERAL DE TODA LA WEB: segunda imagen enviada por el usuario */
+/* FONDO GENERAL: limitado al contenido y cortado exactamente antes del footer */
 html{background:#101d19}
-body{
+body{background:#101d19}
+main{
   background-image:linear-gradient(rgba(7,18,14,.56),rgba(7,18,14,.56)),url("https://iili.io/nwP1ypR.md.jpg");
   background-position:center center;
   background-size:cover;
@@ -175,12 +176,10 @@ body{
 .banner-strip{background:rgba(217,245,139,.94)}
 .banner-dark{background:rgba(226,234,220,.93)}
 .casting{background:rgba(242,240,232,.91)}
-.footer{background:rgba(16,29,25,.94)}
-/* El hero conserva su propia imagen principal; la segunda imagen funciona como fondo global */
+/* El footer queda con un fondo sólido, sin que se vea la imagen detrás */
+.footer{background:#101d19!important}
+/* El hero conserva su propia imagen principal */
 .hero-second-image{display:none!important}
-@media(max-width:760px){
- body{background-attachment:scroll;background-position:center top}
-}
 
 
 /* Ajustes finales solicitados: banner único en historia y galería sin fotografías */
@@ -223,18 +222,6 @@ body{
 .countdown-label{font-weight:850;letter-spacing:.04em;font-size:1rem}.countdown-units{display:flex;gap:10px}.countdown-units div{min-width:74px;text-align:center;padding:10px 12px;border:1px solid rgba(255,255,255,.16);border-radius:12px;background:rgba(255,255,255,.06)}
 .countdown-units strong{display:block;font-size:clamp(1.5rem,3vw,2.15rem);line-height:1.1;color:#d9f58b;font-variant-numeric:tabular-nums}.countdown-units small{font-size:.58rem;letter-spacing:.12em;color:#d5dfd6;font-weight:800}.casting-countdown p{margin:0;color:#d5dfd6;font-size:.78rem;max-width:170px}
 @media(max-width:760px){.casting-countdown{margin:0 0 28px;align-items:flex-start;flex-direction:column;padding:22px}.countdown-units{width:100%;gap:7px}.countdown-units div{flex:1;min-width:0;padding:10px 4px}.casting-countdown p{max-width:none}}
-
-
-/* Ajuste del fondo general para celulares:
-   ocupa el ancho disponible sin deformar la fotografía. */
-@media (max-width: 760px) {
-  body {
-    background-attachment: scroll;
-    background-position: center top;
-    background-size: 100% auto;
-    background-repeat: repeat-y;
-  }
-}
 
 </style>
 </head>
